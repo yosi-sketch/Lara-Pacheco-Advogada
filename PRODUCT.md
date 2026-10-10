@@ -1,31 +1,29 @@
-# Karine Lima — Advocacia Familiarista
-
-## Plataforma
-Site institucional responsivo em Next.js, com navegação por seções, detalhes das áreas de atuação em modal e links de contato.
-
-## Público
-Pessoas que procuram informação e orientação jurídica em Direito de Família em Teófilo Otoni e região.
+# Lara Pacheco de Figueiredo — Advogadas de Empresa
 
 ## Objetivo
-Apresentar Karine Lima, sua atuação familiarista e formas de contato e localização.
+Apresentar Lara Pacheco de Figueiredo e a atuação da Advogadas de Empresa, de Danila Guimarães e Lara Pacheco, em Direito Trabalhista e Empresarial.
 
 ## Identidade
-- Nome: Karine Lima, advogada familiarista.
-- Paleta extraída da marca: marrom quente, tons de areia e marfim.
-- Tipografia: Cormorant Garamond nos títulos e Plus Jakarta Sans nos textos.
-- Tom: acolhedor, sóbrio, claro e informativo.
+- Dourado extraído do emblema: #e0b050 e #f0c060; bronze escuro #805010.
+- Grafite #171714, marfim #faf7ee e branco para contraste.
+- Cinzel nos títulos; Plus Jakarta Sans no corpo.
+- Tom sóbrio, claro e próximo da rotina de quem empreende.
 
-## Conteúdo e mídia
-- Endereço: R. Dr. Manoel Esteves, 333, sala 210, Centro, Teófilo Otoni - MG, 39800-090.
-- Instagram: @karinelima.adv — https://www.instagram.com/karinelima.adv/.
-- Áreas representadas nos materiais: divórcio, convivência familiar e adoção.
-- Logo, retratos profissionais e publicações informativas fornecidos para o projeto.
-- Avaliações públicas podem ser consultadas no perfil do Google; depoimentos individuais não são reproduzidos no site.
+## Conteúdo
+- Consultoria preventiva, Direito Trabalhista, Direito Empresarial e atuação contenciosa.
+- Retratos e foto da equipe fornecidos na pasta public.
+- Depoimentos completos de seis clientes, selecionados dos textos fornecidos pelo cliente.
+- Não apresentar depoimentos truncados ou promessas de resultados.
+- Não usar contagem de avaliações ou nota agregada sem confirmação do dado.
 
 ## Contato
-Instagram e localização pública no Google são os canais disponíveis nos dados fornecidos. Telefone, WhatsApp, e-mail e inscrição na OAB não foram informados.
+WhatsApp: (31) 99250-7277, https://wa.me/5531992507277.
+Instagram: https://www.instagram.com/advogadasdeempresa/.
+Danila Guimarães: https://www.instagram.com/danilaguimaraes.adv/.
+Av. Wilson Alvarenga, 1140, sala 506, Carneirinhos, João Monlevade — MG, 35930-001, Brasil.
+E-mail e OAB não informados.
 
-## Restrições técnicas
-- Next.js 16 App Router, React 19, Tailwind CSS 4 e Framer Motion.
-- Imagens locais, servidas pelo componente de imagem do Next.js.
-- Navegação responsiva, animações com suporte à preferência por movimento reduzido e metadados atualizados.
+## Técnica
+Next.js 16, Tailwind CSS 4 com configuração em CSS.
+Imagens locais e metadados da marca. Contatos em app/site-data.ts.
+Menu móvel e modais com fechamento por Escape, contenção e restauração do foco.

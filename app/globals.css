@@ -2,146 +2,57 @@
 
 :root {
   color-scheme: light;
-  --brand-brown: #987153;
-  --brand-brown-dark: #704f3b;
-  --brand-brown-deep: #2d2119;
-  --brand-ink: #2b241f;
-  --brand-ink-soft: #71665e;
-  --brand-ivory: #faf7f2;
-  --brand-paper: #ffffff;
+  --brand-gold: #e0b050;
+  --brand-gold-dark: #805010;
+  --brand-ink: #171714;
+  --brand-ink-soft: #68665f;
+  --brand-ivory: #faf7ee;
 }
 
+/* Tailwind CSS 4 uses CSS theme tokens instead of a JavaScript config.
+   Gold anchors sampled from the logo: #e0b050, #f0c060, #805010.
+   Ivory and graphite support readable light and dark surfaces. */
 @theme inline {
-  --font-serif: var(--font-display), "Cormorant Garamond", Georgia, serif;
+  --font-serif: var(--font-display), "Cinzel", Georgia, serif;
   --font-sans: var(--font-body), "Plus Jakarta Sans", system-ui, sans-serif;
-  --color-ink: #2b241f;
-  --color-ink-soft: #71665e;
-  --color-ivory: #faf7f2;
-  --color-brand-50: #f7f2ed;
-  --color-brand-100: #eee4da;
-  --color-brand-200: #dfcbb9;
-  --color-brand-300: #c9aa91;
-  --color-brand-400: #b18c6e;
-  --color-brand-500: #987153;
-  --color-brand-600: #805e46;
-  --color-brand-700: #704f3b;
-  --color-brand-800: #593e2f;
-  --color-brand-900: #402e23;
-  --color-brand-950: #2d2119;
-  --shadow-card: 0 18px 48px rgba(47, 35, 26, 0.1);
+  --color-ink: #171714;
+  --color-ink-soft: #68665f;
+  --color-ivory: #faf7ee;
+  --color-brand-50: #fcf8eb;
+  --color-brand-100: #f8e7be;
+  --color-brand-200: #f0c060;
+  --color-brand-300: #e0b050;
+  --color-brand-400: #d0a040;
+  --color-brand-500: #b08030;
+  --color-brand-600: #906020;
+  --color-brand-700: #805010;
+  --color-brand-800: #704010;
+  --color-brand-900: #48300e;
+  --color-brand-950: #211b10;
+  --shadow-card: 0 18px 48px rgb(23 23 20 / 8%);
 }
 
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 6rem;
-}
-
-body {
-  background: var(--brand-ivory);
-  color: var(--brand-ink);
-  font-family: var(--font-body), "Plus Jakarta Sans", system-ui, sans-serif;
-}
-
-::selection {
-  background: #704f3b;
-  color: #fff;
-}
-
-.eyebrow,
-.eyebrow-light {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  font-size: 0.67rem;
-  font-weight: 700;
-  line-height: 1.4;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-}
-
-.eyebrow {
-  color: #704f3b;
-}
-
-.eyebrow-light {
-  color: #dfcbb9;
-}
-
-.eyebrow::before,
-.eyebrow-light::before {
-  width: 1.75rem;
-  height: 1px;
-  flex: none;
-  background: currentColor;
-  content: "";
-}
-
-.nav-link {
-  position: relative;
-  padding-block: 0.5rem;
-  color: #625b59;
-  font-size: 0.68rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  transition: color 180ms ease;
-}
-
-.nav-link::after {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 1px;
-  background: #704f3b;
-  content: "";
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 180ms ease;
-}
-
-.nav-link:hover {
-  color: #704f3b;
-}
-
-.nav-link:hover::after {
-  transform: scaleX(1);
-}
-
-.footer-link {
-  transition: color 180ms ease;
-}
-
-.footer-link:hover {
-  color: #dfcbb9;
-}
-
-::-webkit-scrollbar {
-  width: 9px;
-}
-
-::-webkit-scrollbar-track {
-  background: #eee4da;
-}
-
-::-webkit-scrollbar-thumb {
-  border: 2px solid #eee4da;
-  border-radius: 999px;
-  background: #b18c6e;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #704f3b;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-
-  *,
-  *::before,
-  *::after {
-    scroll-behavior: auto !important;
-  }
-}
+html { scroll-behavior: smooth; scroll-padding-top: 7rem; }
+body { background: var(--brand-ivory); color: var(--brand-ink); font-family: var(--font-body), sans-serif; }
+::selection { background: #f0c060; color: #171714; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button { cursor: pointer; }
+:focus-visible { outline: 2px solid #b08030; outline-offset: 5px; }
+.container-shell { width: min(100%, 1280px); margin-inline: auto; padding-inline: 1.25rem; }
+.section-space { padding-block: 5rem; scroll-margin-top: 7rem; }
+.section-title { font-family: var(--font-display), Georgia, serif; font-size: clamp(2rem, 3.5vw, 3rem); line-height: 1.18; letter-spacing: -0.025em; }
+.hero-section { background-image: radial-gradient(ellipse at 15% 20%, rgb(224 176 80 / 10%), transparent 55%); scroll-margin-top: 7rem; }
+.eyebrow, .eyebrow-light { display: flex; align-items: center; gap: 0.75rem; font-size: 0.65rem; font-weight: 700; line-height: 1.8; letter-spacing: 0.17em; text-transform: uppercase; }
+.eyebrow { color: #805010; }
+.eyebrow-light { color: #f0c060; }
+.eyebrow::before, .eyebrow-light::before { width: 1.6rem; height: 1px; flex: none; background: currentColor; content: ""; }
+.nav-link { padding-block: 0.65rem; color: #d9d8d1; font-size: 0.65rem; font-weight: 600; letter-spacing: 0.09em; text-transform: uppercase; transition: color 180ms; }
+.nav-link:hover, .footer-link:hover { color: #f0c060; }
+.footer-link { transition: color 180ms; }
+.skip-link { position: fixed; top: 0.75rem; left: 1rem; z-index: 100; transform: translateY(-200%); background: #faf7ee; color: #171714; padding: 0.75rem 1rem; }
+.skip-link:focus { transform: translateY(0); }
+.area-dialog { width: min(36rem, calc(100% - 2rem)); max-height: 85dvh; margin: auto; overflow-y: auto; border: 1px solid #b08030; background: #faf7ee; color: #171714; box-shadow: 0 24px 80px rgb(0 0 0 / 25%); }
+.area-dialog::backdrop { background: rgb(23 23 20 / 75%); backdrop-filter: blur(5px); }
+@media (min-width: 640px) { .container-shell { padding-inline: 2rem; } .section-space { padding-block: 6rem; } }
+@media (min-width: 1024px) { .container-shell { padding-inline: 3rem; } .section-space { padding-block: 7rem; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }

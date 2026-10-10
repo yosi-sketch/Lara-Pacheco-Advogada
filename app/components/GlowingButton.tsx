@@ -26,7 +26,7 @@ export default function GlowingButton({
   }[size];
 
   const classes =
-    "inline-flex items-center justify-center gap-2 rounded-full border border-brand-700 bg-brand-700 font-semibold uppercase text-white transition-all duration-200 hover:-translate-y-0.5 hover:border-brand-800 hover:bg-brand-800 focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-brand-700 " +
+    "inline-flex items-center justify-center gap-2 rounded-full border border-brand-200 bg-brand-200 font-semibold uppercase text-ink transition-all duration-200 hover:-translate-y-0.5 hover:border-brand-100 hover:bg-brand-100 focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-brand-500 " +
     "select-none text-center " +
     sizeClasses +
     " " +
